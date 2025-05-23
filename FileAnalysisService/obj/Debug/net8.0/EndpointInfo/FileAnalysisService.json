@@ -1,0 +1,53 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "File Analysis API",
+    "description": "Статистика текста и Jaccard similarity",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/analyze/{fileId}": {
+      "post": {
+        "tags": [
+          "FileAnalysisService"
+        ],
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "FileAnalysisService"
+        ],
+        "parameters": [
+          {
+            "name": "fileId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

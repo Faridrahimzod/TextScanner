@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAnalysisService", "FileAnalysisService.csproj", "{BF1BD34C-D421-7266-FF60-79C58CE66E14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF1BD34C-D421-7266-FF60-79C58CE66E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1BD34C-D421-7266-FF60-79C58CE66E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1BD34C-D421-7266-FF60-79C58CE66E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1BD34C-D421-7266-FF60-79C58CE66E14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41994473-A3F0-4233-A60A-9A50E7760BFC}
+	EndGlobalSection
+EndGlobal
