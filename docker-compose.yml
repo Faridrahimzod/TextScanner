@@ -1,0 +1,29 @@
+
+version: "3.9"
+services:
+  gateway:
+    build: ./ApiGateway
+    ports:
+      - "8000:80"
+    depends_on:
+      - storage
+      - analysis
+
+  storage:
+    build: ./FileStorageService
+    ports:
+      - "7001:80"
+    volumes:
+      - filestore:/app/files
+
+  analysis:
+    build: ./FileAnalysisService
+    environment:
+      - ConnectionStrings__Default=Data Source=/app/data/analysis.db
+    volumes:
+      - filestore:/app/files
+    ports:
+      - "7002:80"
+
+volumes:
+  filestore:
